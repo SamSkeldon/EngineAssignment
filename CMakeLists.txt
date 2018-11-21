@@ -66,7 +66,6 @@ endif()
 
 add_executable(game
   src/game/main.cpp
-  contrib/stb_image/stb_image.cpp
 )
 
 target_link_libraries(game myengine)

@@ -30,13 +30,13 @@ void MeshRenderer::onInit()
   model = glm::translate(model, glm::vec3(0, -2.1f, -20.0f));
   model = glm::rotate(model, glm::radians(angle), glm::vec3(0, 1, 0));
   shader->setUniform("in_Model", model);
-  shader->setUniform("in_Texture", );
+ //shader->setUniform("in_Texture", );
 }
 
 void MeshRenderer::onDisplay()
 {
   shader->setUniform("in_Model", glm::mat4(1.0f));
-//  shader->setUniform("in_Projection", glm::perspective(glm::radians(45.0f), (float)800 / (float)600, 0.1f, 100.f));
+  //shader->setUniform("in_Projection", glm::perspective(glm::radians(45.0f), (float)800 / (float)600, 0.1f, 100.f));
 //  shader->draw(*shape);
 }
 
